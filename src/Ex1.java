@@ -28,7 +28,7 @@ public class Ex1 {
             double x = -b / (2 * a);
             System.out.println("The equation has one solution: x = " + x);
         }else{
-            System.out.println("The equation ha no real solution.");
+            System.out.println("The equation has no real solution.");
         }
     }
 }
