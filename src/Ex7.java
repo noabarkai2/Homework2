@@ -13,7 +13,7 @@ public class Ex7 {
     }
 
     public static boolean isNarcissistic(int number) {
-        int digitsCount = countDigits(number); // פונקציה שסופרת את כמות הספרות במספר
+        int digitsCount = countDigits(number); //  פונקציה שסופרת את כמות הספרות במספר
         int sum = 0;
         int tempNum = number;
 
