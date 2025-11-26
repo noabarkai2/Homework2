@@ -9,7 +9,8 @@ public class Ex4 {
         int count = 0;
         System.out.printf("The first %d prime numbers are: ", amountOfPrimeNumbers);
         while (count < amountOfPrimeNumbers) {
-            if(isPrime(currentNumber)){
+            if(isPrime(currentNumber)){// מפעיל את הפונקציה isPrime ובודק מספר מהמספר הראשוני הראשון (שהוא 2)
+                // והלאה אם המספר ראשוני עד שמגיע לamount של המספרים הראשוניים שקיבלתי בקלט
                 if(count < amountOfPrimeNumbers-1) { //בשביל לעשות פסיקים בהכל חוץ מבאחרון
                     System.out.print(currentNumber + ", ");
                 }else{

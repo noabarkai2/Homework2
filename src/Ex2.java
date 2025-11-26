@@ -10,7 +10,7 @@ public class Ex2 {
         int n;
         boolean nIsAbsorbed = false;
         do {
-            if(!nIsAbsorbed){
+            if(!nIsAbsorbed){//אם n (מס איברים בסדרה) לא חיובי מבקשים שוב ושוב להכניס מספר חיובי.
                 System.out.print("please enter a positive number of terms in the arithmetic sequence : ");
                 nIsAbsorbed = true;
             }else{
@@ -25,7 +25,7 @@ public class Ex2 {
         int count = 0;
         double currentNumber = a1;
         while(count < n){
-            if(count == n-1){
+            if(count == n-1){// באחרון לא מדפיס פסיק אחריו.(ליופי)
                 System.out.print(currentNumber);
             }else{
                 System.out.print(currentNumber + " , ");

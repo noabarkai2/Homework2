@@ -27,7 +27,7 @@ public class Ex7 {
         return sum == number;
     }
 
-    // פונקציה עזר קטנה לספירת ספרות
+    // פונקציה עזר  לספירת ספרות
     public static int countDigits(int number) {
         if (number == 0) return 1;
         int count = 0;

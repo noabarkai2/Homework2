@@ -13,7 +13,7 @@ public class Ex3 {
     public static int calculateSumOfDigitsOfNumber(int number){
         int currentDigit = 0;
         int sum = 0;
-        while(number>0){
+        while(number>0){ //כל פעם סוכם את ספרת האחדות ומחלק בעשר את המספר עד שמגיע ל-0.
             currentDigit = number % 10;
             sum += currentDigit;
             number/= 10;
