@@ -8,30 +8,31 @@ public class Ex2 {
         System.out.print("please enter the difference between 2 consecutive terms in the arithmetic sequence : ");
         double d = scanner.nextDouble();
         int n;
-        boolean nIsAbsorbed = false;
+        //  בודקת אם המספר חיובי או לא אם לא מבקשת שוב מהמשתמש ומציגה לו הודעת error
         do {
-            if(!nIsAbsorbed){//אם n (מס איברים בסדרה) לא חיובי מבקשים שוב ושוב להכניס מספר חיובי.
-                System.out.print("please enter a positive number of terms in the arithmetic sequence : ");
-                nIsAbsorbed = true;
-            }else{
-                System.out.print("error: n have to be positive please enter again : ");
-            }
+            System.out.print("Please enter a positive number of terms in the arithmetic sequence: ");
             n = scanner.nextInt();
-        }while(n <= 0);
+
+            if (n <= 0) {
+                // הודעת שגיאה מודפסת רק אם התנאי נכשל
+                System.out.println("Error: The number of terms (n) must be positive. Please try again.");
+            }
+        } while (n <= 0);
         getArithmeticSequence(a1, d, n);
     }
 
     public static void getArithmeticSequence(double a1, double d, int n){
         int count = 0;
-        double currentNumber = a1;
-        while(count < n){
-            if(count == n-1){// באחרון לא מדפיס פסיק אחריו.(ליופי)
-                System.out.print(currentNumber);
-            }else{
-                System.out.print(currentNumber + " , ");
+        for (int i = 0; i < n; i++) {
+            // הנוסחה לאיבר נוכחי - a_i = a1 + (i * d)
+            double currentTerm = a1 + (i * d);
+
+            //  אם זה האיבר האחרון מדפיס בלי פסיק
+            if (i == n - 1) {
+                System.out.print(currentTerm);
+            } else {
+                System.out.print(currentTerm + ", ");
             }
-            currentNumber += d;
-            count++;
         }
 
     }
