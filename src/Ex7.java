@@ -5,7 +5,7 @@ public class Ex7 {
     }
 
     public static void getAllTheNarcissisticNumbers() {
-        for (int i = 100; i <= 1000; i++) {
+        for (int i = 1; i <= 1000; i++) {
             if (isNarcissistic(i)) { // הפונקציה בודקת האם המספר נרקיסיסטי
                 System.out.print(i + " ");
             }
