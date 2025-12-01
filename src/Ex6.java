@@ -9,7 +9,7 @@ public class Ex6 {
             System.out.print("please enter an odd positive number greater than 3: ");
             number = scanner.nextInt();
         } while (number % 2 == 0 || number <= 3);
-        int mid = number/ 2; //מחלק את היהלוום ל-2 בשורות כך שמשולש אחד גדול מה-2 בשורה האחת שזה האמצע
+        int mid = number/ 2; //מחלק את היהלום ל-2 בשורות כך שמשולש אחד גדול מה-2 בשורה האחת שזה האמצע
         //הדפסת החלק העליון
         int spacesNeeded;
         int lineLength;
@@ -27,7 +27,7 @@ public class Ex6 {
             System.out.println();
         }
         //חלק תחתון
-        for (int i = 1; i <= mid  ; i++) {////מתרחקים מהמרכז לכן מספר הרווחים גדל שוב
+        for (int i = 1; i <= mid  ; i++) {//מתרחקים מהמרכז לכן מספר הרווחים גדל שוב
             spacesNeeded = i;
             lineLength = number - spacesNeeded;
 

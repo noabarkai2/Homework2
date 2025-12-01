@@ -20,11 +20,12 @@ public class Ex1 {
     public static void solveQuadratic(double a, double b, double c){
 
         double discriminant = b * b - 4 * a * c;
-        if(discriminant > 0){
+        if(discriminant > 0){// דיסקרמיננטה > 0 2 פתרונות
             double x1 = (-b + Math.sqrt(discriminant))/ (2 * a);
             double x2 = (-b - Math.sqrt(discriminant))/ (2 * a);
             System.out.println("The equation has 2 solutions: x1 = " + x1 + ", x2 = " + x2);
-        }else if(discriminant == 0){
+        }else if(discriminant == 0)// דיסקרמיננטה = 0 פתרון אחד
+        {
             double x = -b / (2 * a);
             System.out.println("The equation has one solution: x = " + x);
         }else{
